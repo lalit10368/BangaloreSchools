@@ -3,9 +3,9 @@ var csvParser = require('../../util/CsvParser.js');
 var config = require('../../config/');
 
 function BaseService (){
-    this.fileName = config.fileName;
-    this.delimiter = config.fileDelimiter;
-    this.schoolDataP = csvParser(fileName, fileDelimiter);
+    var fileName = config.fileName;
+    var filePath = config.filePath;
+    this.schoolDataP = csvParser([filePath, fileName].join("/"), config.fileDelimiter);
 }
 
 BaseService.prototype.convertToJson = function() {
