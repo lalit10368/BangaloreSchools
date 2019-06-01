@@ -8,8 +8,6 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-
-
 function init(path, app) {
     var rest = path + '/rest';
     var files = fs.readdirSync(rest);
@@ -26,16 +24,13 @@ function init(path, app) {
     });
 }
 
-
 init(__dirname, app);
 
-
 module.exports.start = function() {
-    app.listen(process.env.API_PORT || 5000, function(err) {
+    app.listen(3000, function(err) {
         if (err) {
             console.log('Error in starting api server:', err);
         }
-
-        console.log("api server listening on",  process.env.API_PORT || 5000);
+        console.log("api server listening on", 3000);
     });
 };
