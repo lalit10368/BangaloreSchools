@@ -8,8 +8,8 @@ module.exports = function(fileName, delimiter) {
 
     return new Promise(function(resolve) {
 
-        var jsonData = [];
 
+        var jsonData = [];
         var rl = readline.createInterface({
             input: fs.createReadStream(fileName),
             crlfDelay: Infinity
@@ -24,7 +24,6 @@ module.exports = function(fileName, delimiter) {
                 var values = line.split(delimiter).map(_.trim);
                 if(values.length == keys.length) {
                     var object = _.zipObject(keys, values);
-                    console.log(object);
                     jsonData.push(object);
                 }
             }
