@@ -1,0 +1,23 @@
+{
+    "host" : {
+        "doc": "The IP address to bind.",
+        "format": "ipaddress",
+        "default": "127.0.0.1",
+        "env": "IP_ADDRESS"
+    },
+    "port" : {
+        "doc" : "The port to bind.",
+        "format": "port",
+        "default": 3000,
+        "env": "PORT"
+    },
+    "fileName" : {
+        "doc" : "Filename for the csv file",
+        "format" : "csv",
+        "default" : "Bangalore_schools.csv"
+    },
+    "fileDelimiter" : {
+        "doc" : "Delimiter of the raw file",
+        "default" : "|"
+    }
+}
