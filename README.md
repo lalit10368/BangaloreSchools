@@ -29,4 +29,6 @@ node apiServer.js
 
 ## To query
 
-http://localhost:3000/search?address=Manjunath
+http://localhost:3000/search?address=Manjunath // search for schools in area Manjunath
+http://localhost:3000/filter?gender=co-ed // filter by gender co-ed
+http://localhost:3000/sort?by=name // sorts by school name
