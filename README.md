@@ -36,4 +36,4 @@ node apiServer.js
 
 ## To access on google maps
 * http://localhost:3000/static
-![Static markers from hardcoded result(truncated) of sort by schoolName](https://github.com/lalit10368/BangaloreSchools/blob/master/public/img/StaticMarkers.png)
+![Static markers from hardcoded truncated result of sort by schoolName query](https://github.com/lalit10368/BangaloreSchools/blob/master/public/img/StaticMarkers.png)
