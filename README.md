@@ -3,7 +3,9 @@
 
 ## Bangalore Schools Data application.
 
-Csv is parsed and stored in memory for any query of search, sort or filter.
+The data is taken from the link below
+> https://github.com/openbangalore/bangalore/blob/master/bangalore/Education/Bangalore_schools.csv
+The Csv file above is parsed and stored in memory for any query of search, sort or filter.
 
 1. Search: Search is supported over fields
     Schoolname,
